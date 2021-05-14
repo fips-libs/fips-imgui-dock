@@ -1,7 +1,7 @@
 # fips-imgui-dock
+#
+# NOTE: this doesn't pollute the global header search path
 ---
 exports:
-    header-dirs:
-        - imgui
     modules:
         imgui-dock: .

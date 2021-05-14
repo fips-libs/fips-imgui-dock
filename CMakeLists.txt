@@ -12,8 +12,7 @@ endif()
 
 fips_begin_lib(imgui-dock)
     fips_vs_disable_warnings(4312)   # 'type cast': conversion from 'int' to 'void *' of greater size
-    include_directories(imgui)
-    fips_dir(imgui)
+    fips_dir(imgui-dock)
     fips_files(
         imconfig.h
         imgui.cpp
@@ -28,6 +27,7 @@ fips_begin_lib(imgui-dock)
         imstb_truetype.h
     )
 fips_end_lib()
+target_include_directories(imgui-dock PUBLIC imgui-dock)
 
 if (FIPS_CLANG)
     set_target_properties(imgui PROPERTIES COMPILE_FLAGS "-Wno-unused-parameter -Wno-type-limits -Wno-missing-field-initializers")
