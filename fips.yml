@@ -1,0 +1,7 @@
+# fips-imgui-dock
+---
+exports:
+    header-dirs:
+        - imgui
+    modules:
+        imgui-dock: .
