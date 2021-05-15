@@ -27,7 +27,7 @@ fips_begin_lib(imgui-dock)
         imstb_truetype.h
     )
 fips_end_lib()
-target_include_directories(imgui-dock PUBLIC imgui-dock)
+target_include_directories(imgui-dock PUBLIC .)
 
 if (FIPS_CLANG)
     set_target_properties(imgui PROPERTIES COMPILE_FLAGS "-Wno-unused-parameter -Wno-type-limits -Wno-missing-field-initializers")
