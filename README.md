@@ -1,3 +1,5 @@
+> NOTE: this version is archived and will no longer be updated, please use https://github.com/floooh/dcimgui
+
 fips-imgui-dock
 ===============
 
